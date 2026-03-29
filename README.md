@@ -37,6 +37,10 @@ flutter pub get
 flutter run
 ```
 
+## 🧪 Note Technique
+
+Ce commit inclut une mise à jour documentaire mineure pour vérification du flux Git.
+
 ## 📱 Configuration
 
 - **Minimum SDK** : 21 (Android 5.0)
