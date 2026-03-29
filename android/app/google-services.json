@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "12131244924",
+    "project_id": "leptitcash-23bfa",
+    "storage_bucket": "leptitcash-23bfa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12131244924:android:5a90daae778dee554022f9",
+        "android_client_info": {
+          "package_name": "com.leptitcash.rewards"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD_WnQStK6VwBLUE4jWsLu_L66SZmK7EI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

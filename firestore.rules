@@ -1,0 +1,38 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Règles pour la collection users
+    match /users/{userId} {
+      // Lecture: l'utilisateur peut lire ses propres données
+      allow read: if request.auth != null && request.auth.uid == userId;
+      
+      // Écriture: l'utilisateur peut créer et mettre à jour ses propres données
+      // Mais on empêche la modification de certains champs sensibles
+      allow create: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null && request.auth.uid == userId
+        && request.resource.data.email == resource.data.email
+        && request.resource.data.createdAt == resource.data.createdAt;
+      
+      // Suppression interdite (seul un admin pourrait supprimer)
+      allow delete: if false;
+      
+      // Sous-collections activities
+      match /activities/{activityId} {
+        // L'utilisateur peut lire et créer ses propres activités
+        allow read: if request.auth != null && request.auth.uid == userId;
+        allow create: if request.auth != null && request.auth.uid == userId;
+        // Pas de mise à jour ni suppression des activités (immuable)
+        allow update, delete: if false;
+      }
+      
+      // Sous-collection withdrawals
+      match /withdrawals/{withdrawalId} {
+        // L'utilisateur peut lire et créer ses propres retraits
+        allow read: if request.auth != null && request.auth.uid == userId;
+        allow create: if request.auth != null && request.auth.uid == userId;
+        // Seul un admin peut mettre à jour le statut (ex: pending -> completed)
+        allow update, delete: if false;
+      }
+    }
+  }
+}

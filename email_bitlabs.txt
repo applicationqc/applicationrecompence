@@ -1,0 +1,41 @@
+À: support@bitlabs.ai
+Sujet: Publisher Verification Request - Le P'tit Cash (com.leptitcash.rewards)
+
+Hello,
+
+I need to verify my publisher account for my app "Le P'tit Cash".
+
+App Details:
+- App Name: Le P'tit Cash
+- Package Name: com.leptitcash.rewards
+- Token: 4040d4a9-1c20-423c-9f9a-f849f98e8ad2
+- Website: https://vincentcorbeil.github.io/leptitcash-policies/
+- Account Deletion Page: https://vincentcorbeil.github.io/leptitcash-policies/account_deletion.html
+- Platform: Android (Google Play Store - currently in closed testing)
+- Category: Entertainment / Rewards
+
+About the App:
+Le P'tit Cash is a rewards platform where users earn our virtual currency "PtitCoins" by:
+- Watching rewarded video ads (Google AdMob integration)
+- Completing surveys through BitLabs
+- Users can redeem their earnings via PayPal or gift cards (Amazon, Google Play, iTunes)
+
+Offerwall Placement:
+The BitLabs offerwall is accessible via a prominent "Sondage" (Survey) button on the main screen, displayed directly under the user's PtitCoins balance.
+
+Traffic Sources:
+- Google Play Store (organic search and discovery)
+- AdMob advertising for user acquisition
+- Word-of-mouth within the French-Canadian community
+
+Other Partners:
+- Google AdMob (banner ads, interstitial ads, rewarded video ads)
+- BitLabs is our primary and exclusive partner for survey-based rewards
+
+Could you please verify my publisher account so users can access surveys?
+
+Thank you for your assistance!
+
+Best regards,
+Vincent Corbeil
+vincent.corbeil.app@gmail.com

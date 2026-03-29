@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression de compte - Le P'tit Cash</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .app-name {
+            color: #667eea;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #555;
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        ul {
+            margin-left: 20px;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .email-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        
+        .email-link:hover {
+            background: #5568d3;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗑️ Suppression de compte</h1>
+        <p class="app-name">Le P'tit Cash - Application de récompenses</p>
+        
+        <div class="section">
+            <h2>Comment supprimer votre compte</h2>
+            <p>Pour demander la suppression de votre compte et de toutes vos données associées, veuillez nous envoyer un email avec les informations suivantes :</p>
+            
+            <div class="info-box">
+                <strong>Informations requises :</strong>
+                <ul>
+                    <li>Adresse email du compte à supprimer</li>
+                    <li>Confirmation : "Je demande la suppression de mon compte"</li>
+                </ul>
+            </div>
+            
+            <a href="mailto:vincent.corbeil.app@gmail.com?subject=Demande%20de%20suppression%20de%20compte%20-%20Le%20P'tit%20Cash&body=Bonjour%2C%0A%0AJe%20demande%20la%20suppression%20de%20mon%20compte%20Le%20P'tit%20Cash.%0A%0AEmail%20du%20compte%20%3A%20%0A%0AMerci" 
+               class="email-link">
+                📧 Envoyer la demande
+            </a>
+        </div>
+        
+        <div class="section">
+            <h2>Données supprimées</h2>
+            <p>Lors de la suppression de votre compte, les données suivantes seront définitivement supprimées :</p>
+            <ul>
+                <li>Votre compte d'authentification Firebase</li>
+                <li>Toutes vos données dans Firestore (points, historique de vidéos, sondages)</li>
+                <li>Votre historique de retraits</li>
+                <li>Toutes vos activités enregistrées</li>
+            </ul>
+        </div>
+        
+        <div class="warning-box">
+            <strong>⚠️ Attention :</strong> Cette action est irréversible. Vous perdrez tous vos points accumulés et ne pourrez plus accéder à votre compte.
+        </div>
+        
+        <div class="section">
+            <h2>Délai de traitement</h2>
+            <p>Votre demande sera traitée dans un délai de <strong>48 heures maximum</strong>. Vous recevrez un email de confirmation une fois la suppression effectuée.</p>
+        </div>
+        
+        <div class="footer">
+            <p>Le P'tit Cash © 2026</p>
+            <p>Email : vincent.corbeil.app@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
